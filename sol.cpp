@@ -35,7 +35,7 @@ int main() {
 		sort(temp.begin(), temp.end(), Compare);
 		long long ans = 0;
 		for (int i = n - 1; i >= 0; i--) {
-			// if the current size can be accommdated by 'x' space
+			// if the current size can be accommodated by 'x' space
 			// then store the movie with the highest IMDB rating
 			if (x >= s[temp[i] - 1]) {
 				ans = max(ans, r[temp[i] - 1]);
